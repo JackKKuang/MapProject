@@ -1,0 +1,67 @@
+<html id ="html">
+<head>
+	<link rel="stylesheet" href ="style.css">
+	<script src="script.js" defer></script>
+	<title>Google Maps Project</title>
+	<link rel="icon" type="image/x-icon" href="icons/favicon.ico"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<script>
+  function initMap(){console.log("Initalized");};  
+</script>
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm0Z8LSGpL0h8meZp9OaUA4yVFi7GekkU&callback=initMap&libraries=places"></script>
+
+<body>
+ 
+<div class="slidecontainer">
+  Range
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+  <div id="anchor">Anchor</div>
+  
+  <select id="selection">
+      <option value="restaurant">Restaurant</option>
+      <option value="accounting">accounting</option>
+      <option value="airport ">airport</option>
+      <option value="amusement_park">amusement_park</option>
+      <option value="aquarium">aquarium</option>
+      <option value="art_gallery">art_gallery</option>
+      <option value="atm">ATM</option>
+      <option value="bakery">Bakery</option>
+      <option value="bank">Bank</option>
+      <option value="bar">Bar</option>
+      <option value="book_store">Book Store</option>
+      <option value="cafe">Cafe</option>
+      <option value="clothing_store">Clothing Store</option>
+      <option value="convenience_store">Convenience Store</option>
+      <option value="department_store">Department Store</option>
+      <option value="drugstore">Drugstore</option>
+      <option value="electronics_store">Electronics Store</option>
+      <option value="hospital">Hospital</option>
+      <option value="jewelry_store">Jewelry Store</option>
+      <option value="movie_theater">Movie Theater</option>
+      <option value="night_club">Night Club</option>
+      <option value="park">Park</option>
+      <option value="pharmacy">Pharmacy</option>
+      <option value="primary_school">Primary School</option>
+      <option value="secondary_school">Secondary School</option>
+      <option value="shoe_store">Shoe Store</option>
+      <option value="shopping_mall">Shopping Mall</option>
+      <option value="stadium">Stadium</option>
+      <option value="supermarket">Supermarket</option>
+      <option value="tourist_attraction">Tourist Attraction</option>
+      <option value="university">University</option>
+
+  </select>
+</div>
+  
+ <h1>
+    Go outside! Get some food!  
+ </h1>
+  
+  
+  
+<div id="map"></div>
+  
+</body>
